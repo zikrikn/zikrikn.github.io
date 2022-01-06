@@ -1,0 +1,108 @@
+<p dir="ltr" style="text-align: left;"></p><p></p><p><b>procedure
+inputData(in/out T: ArrMhs, in N:integer) </b></p>
+
+<p>{I.S. data mahasiswa
+telah siap pada piranti masukan (kecuali Nilai Akhir)</p>
+
+<p>Proses. meminta
+inputan dari user (jumlah data dan datanya), </p>
+
+<p>F.S. array DataMhs
+berisi N data mahasiswa berupa Nama, NIM, uts, uas,dan kuis}</p>
+
+<p>&nbsp;</p>
+
+<p><b>procedure
+hitung_nilai_akhir(in/out T: ArrMhs, in N:integer) </b></p>
+
+<p>{I.S. terdefinisi
+array T yang berisi N data mahasiswa</p>
+
+<p>F.S. field NilaiAkhir
+pada array T berisi Nilai Akhir yang dihitung dari nilai Kuis, UTS dan UAS}</p>
+
+<p>&nbsp;</p>
+
+<p><b>procedure min_max(in
+T: ArrMhs, N:Integer, in/out min, max: integer) </b></p>
+
+<p>{I.S. terdefinisi
+array T yang berisi N data mahasiswa</p>
+
+<p>F.S. min berisi
+INDEX/POSISI Nilai Akhir minimum, dan max berisi INDEX/POSISI Nilai Akhir
+maximum}</p>
+
+<p>&nbsp;</p>
+
+<p><b>function median(Input
+T: ArrMhs, N:Integer) -&gt; Real</b></p>
+
+<p>{Mengemblikan nilai
+median dari Nilai Akhir dari N mahasiswa pada array T}</p>
+
+<p>&nbsp;</p>
+
+<p><b>procedure mencetak(in/out T : ArrMhs, in N
+:integer)</b></p>
+
+<p>{IS. terdefinisi array T yang berisi N elemen. </p>
+
+<p>FS. menampilkan isi dari array T}</p>
+
+<p>&nbsp;</p>
+
+<p><b>{Program Utama}</b></p>
+
+<p>program Nilai_akhir </p>
+
+<p>kamus</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; type mahasiswa : &lt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nim, nama : string</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kuis, uts, uas : real</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nilai_akhir : real &gt;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; type ArrMhs : Array [0..99] of mahasiswa</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T : ArrMhs</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {variabel lain ditambahkan
+dibawah ini}</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+
+<p>algoritma </p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {meminta inputan
+data mahasiswa}</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {menghitung nilai
+akhir tiap siswa}</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {mencari Posisi
+Nilai Akhir minimum dan maximum, lalu mengoutputkan data mahasiswa berupa nama
+dan nim&nbsp; mahasiswa yang mendapat nilai
+minimum, dan yang mendapat nilai maksimum}</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {mencari nilai
+median, dan mengoutputkan nilainya}</p>
+
+<p>&nbsp;</p>
+
+<b>endprogram</b><br><p></p><p></p>
